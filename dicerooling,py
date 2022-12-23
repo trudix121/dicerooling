@@ -1,0 +1,11 @@
+import random
+
+question1 = input('you need 1 dice? or more  2dice = yes 1dice = no:' )
+
+if question1.lower() == 'yes' :
+    random1 = random.choice('123456')
+    random2 = random.choice('123456')
+    print(random1 + random2)
+if question1.lower() == 'no' :
+    singledice = random.choice('123456')
+    print(singledice)
